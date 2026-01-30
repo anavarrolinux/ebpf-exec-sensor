@@ -1,0 +1,25 @@
+[Unit]
+Description=eBPF Exec Sensor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/linux-monitor/ebpf-exec-sensor
+LimitMEMLOCK=infinity
+StandardOutput=append:/var/log/sensor.log
+StandardError=append:/var/log/sensor.log
+SyslogIdentifier=sensor
+Restart=on-failure
+RestartSec=2
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=full
+LockPersonality=true
+RestrictSUIDSGID=true
+RestrictRealtime=true
+
+[Install]
+WantedBy=multi-user.target
+
