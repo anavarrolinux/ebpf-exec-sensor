@@ -27,6 +27,7 @@ It supports:
 - `main.c` – user-space loader and printer (libbpf skeleton)
 - `interface.h` – shared ABI between kernel/user space
 - `Makefile` – builds CO-RE BPF object + skeleton + user-space binary
+- `ebpf-exec-sensor.service` – example of a working Systemd unit file
 
 ---
 
