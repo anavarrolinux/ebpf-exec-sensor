@@ -31,9 +31,25 @@ It supports:
 
 ---
 
+## Installation
+
+```
+mkdir /opt/linux-monitor
+git clone https://github.com/anavarrolinux/ebpf-exec-sensor.git
+cd ebpf-exec-sensor/
+make
+install -m 700 sensor /opt/linux-monitor/ebpf-exec-sensor
+cp ebpf-exec-sensor.service /etc/systemd/system/
+systemctl start ebpf-exec-sensor
+tail /var/log/sensor.log
+```
+
+---
+
 ## Requirements (Rocky Linux 9)
 
 Install dependencies:
 
 ```bash
 sudo dnf install -y clang llvm bpftool libbpf libbpf-devel elfutils-libelf-devel zlib-devel make gcc
+```
