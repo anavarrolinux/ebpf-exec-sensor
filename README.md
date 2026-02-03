@@ -53,3 +53,5 @@ Install dependencies:
 ```bash
 sudo dnf install -y clang llvm bpftool libbpf libbpf-devel elfutils-libelf-devel zlib-devel make gcc
 ```
+eBPF Sensor Output
+<img width="1172" height="563" alt="image" src="https://github.com/user-attachments/assets/c873709c-04e7-4711-94c6-bc646c0978a6" />
