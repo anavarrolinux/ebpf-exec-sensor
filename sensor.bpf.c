@@ -223,4 +223,3 @@ int handle_exec(struct trace_event_raw_sched_process_exec *ctx)
 }
 
 char LICENSE[] SEC("license") = "GPL";
-
