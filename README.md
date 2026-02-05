@@ -21,6 +21,12 @@ It supports:
 
 ---
 
+Use Cases
+ - Detect unexpected shells, LOLBins, suspicious parent/child chains
+ - Trace exec activity in KubeVirt nodes / container hosts
+ - Feed to Loki and alert on patterns
+
+---
 ## Files
 
 - `sensor.bpf.c` – kernel-side eBPF program (CO-RE)
