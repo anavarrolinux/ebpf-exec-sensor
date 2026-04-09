@@ -5,7 +5,7 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/opt/ebpf-exec-sensor
+ExecStart=/opt/ebpf-exec-sensor/sensor
 LimitMEMLOCK=infinity
 StandardOutput=journal
 StandardError=journal
